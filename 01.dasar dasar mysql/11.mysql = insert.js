@@ -21,10 +21,10 @@ pembuatan tablenya
 
 
 nah untuk memasukkan data kita bisa menggunakna perintah insert
-sebelumnya kita bikin dulu table produk dengan struktur seperti ini
+sebelumnya kita bikin dulu table products dengan struktur seperti ini
 
 
-create table produk (
+create table products (
     id varchar(10) not null,
     name varchar(100) not null,
     description text,
@@ -36,7 +36,7 @@ create table produk (
 maka struktur tablenya akan seperti ini
 
 
-MariaDB [belajar_mysql]> desc produk;
+MariaDB [belajar_mysql]> desc products;
 +-------------+------------------+------+-----+---------------------+-------+
 | Field       | Type             | Null | Key | Default             | Extra |
 +-------------+------------------+------+-----+---------------------+-------+
@@ -51,7 +51,7 @@ MariaDB [belajar_mysql]> desc produk;
 
 
 
-nah sekarang kita akan mencoba memasukkan data kedalam table produk
+nah sekarang kita akan mencoba memasukkan data kedalam table products
 
 
 
@@ -78,21 +78,21 @@ kurung (column1,column2,..n)
 kita coba
 
 
-insert into produk (id,name,price,quantity) values ('P0001','Mie Ayam Original',15000,100);
+insert into products (id,name,price,quantity) values ('P0001','Mie Ayam Original',15000,100);
 
 jadi bacanya gini
-tambahkan kedalam table produk dengan column () dengan nilai ()
+tambahkan kedalam table products dengan column () dengan nilai ()
 
 kita jalankan 
 
 jika kalian ingin melihat hasilnya kalian tinggal tulis
 
-select * from produk;
+select * from products;
 
 maka akan tampil seperti ini
 
 
-MariaDB [belajar_mysql]> select * from produk;
+MariaDB [belajar_mysql]> select * from products;
 +-------+-------------------+-------------+-------+----------+---------------------+
 | id    | name              | description | price | quantity | created_at          |
 +-------+-------------------+-------------+-------+----------+---------------------+
@@ -106,13 +106,13 @@ nah kita coba insert lagi
 
 
 
-insert into produk (id,name,description,price,quantity) 
+insert into products (id,name,description,price,quantity) 
 values ('P0002','Mie Ayam Bakso Tahu','Mie Ayam Original + Bakso Tahu',20000,100);
 
 kita lihat hasilnya
 
 
-MariaDB [belajar_mysql]> select * from produk;
+MariaDB [belajar_mysql]> select * from products;
 +-------+---------------------+--------------------------------+-------+----------+---------------------+
 | id    | name                | description                    | price | quantity | created_at          |
 +-------+---------------------+--------------------------------+-------+----------+---------------------+
@@ -134,7 +134,7 @@ banyak ?
 
 jadi caranya seperti ini
 
-insert into produk (id,name,price,quantity)
+insert into products (id,name,price,quantity)
 values ('P0003','Mie Ayam Ceker',20000,100),
 ('P0004','Mie Ayam Spesial',25000,100),
 ('P0005','Mie Ayam Yamin',15000,100);
@@ -144,7 +144,7 @@ jadi kalian tingal tambahkan koma setelah data pertama dan seterusnya
 kita coba jalankan
 
 
-MariaDB [belajar_mysql]> select * from produk;
+MariaDB [belajar_mysql]> select * from products;
 +-------+---------------------+--------------------------------+-------+----------+---------------------+
 | id    | name                | description                    | price | quantity | created_at          |
 +-------+---------------------+--------------------------------+-------+----------+---------------------+
