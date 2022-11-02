@@ -94,19 +94,11 @@ https://www.w3schools.com/sql/sql_where.asp
 
 
 
+-----------------------------------
 
+source programmer zaman now mysql
 
-
-
-
-
-
-
-
-
-
-
-
+-----------------
 
 
 
